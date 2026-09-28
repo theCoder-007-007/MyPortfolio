@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Md Rafi Hossain - Undergraduate CSE Student, Researcher & Full-Stack Developer at Southeast University, Dhaka.">
-  <title>Md Rafi Hossain | CSE Student & Developer</title>
+  <meta name="description" content="Portfolio of Md Rafi Hossain - Beginner CSE Student & Learner at Southeast University, Dhaka.">
+  <title>Md Rafi Hossain | CSE Student Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,70 +12,90 @@
 </head>
 <body>
 
-  <!-- Reading Scroll Progress Bar -->
+  <!-- Scroll Progress Indicator -->
   <div id="scroll-progress"></div>
 
-  <!-- Glassmorphism Header -->
+  <!-- Glassmorphism Floating Navigation -->
   <header id="header">
     <div class="nav-container">
-      <a href="#" class="logo">Rafi<span class="dot">.</span></a>
+      <a href="#" class="logo">Rafi<span class="dot">.</span><span class="badge-tag">Student</span></a>
       <nav id="nav-menu">
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
-        <a href="#research" class="nav-link">Research</a>
+        <a href="#research" class="nav-link">Academic Focus</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <button id="theme-btn" aria-label="Toggle light or dark theme">🌙 Dark Mode</button>
+      <button id="theme-btn" aria-label="Toggle Light or Dark Theme">🌙 Dark Mode</button>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Interactive Animated Hero Section -->
     <section id="hero">
+      <canvas id="hero-particles"></canvas>
       <div class="hero-container">
-        <div class="hero-image-wrapper">
+        <div class="hero-image-wrapper animate-pop">
+          <div class="pulse-ring"></div>
           <img src="profile.jpg" alt="Md Rafi Hossain" class="hero-image">
           <div class="image-glow"></div>
         </div>
         <div class="hero-content">
-          <span class="greeting-badge">📍 Dhaka, Bangladesh</span>
-          <h1>Md Rafi Hossain</h1>
-          <h2>Undergraduate CSE Student @ Southeast University</h2>
-          <p class="hero-bio">
-            Passionate about Web Development, Machine Learning, Robotics, and Computer Graphics. Currently conducting research on explainable AI frameworks for medical diagnostics.
+          <div class="greeting-badge animate-fade">📍 Dhaka, Bangladesh • Beginner Learner</div>
+          <h1 class="animate-text-glow">Hi, I'm <span class="gradient-text">Md Rafi Hossain</span></h1>
+          <h2 class="animate-fade-delay-1">11th Semester Computer Science Student @ Southeast University</h2>
+          <p class="hero-bio animate-fade-delay-2">
+            I'm a CSE student who is actively learning programming, trying out basic web development, and exploring machine learning and robotics through university coursework and small personal experiments.
           </p>
-          <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">View Featured Work</a>
-            <a href="CV_Md_Rafi_Hossain.pdf" download class="btn outline-btn">📄 Download CV</a>
-            <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+          <div class="hero-buttons animate-fade-delay-3">
+            <a href="#projects" class="btn primary-btn glow-effect">Explore My Course Work</a>
+            <a href="CV_Md_Rafi_Hossain.pdf" download class="btn outline-btn">📄 Download Resume</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
           </div>
-          <div class="social-links">
-            <a href="https://github.com/theCoder-007-007" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://linkedin.com/in/md-rafi-hossain-387840430" target="_blank" rel="noopener">LinkedIn ↗</a>
-            <a href="mailto:husseinmdrafee007@gmail.com">Email ↗</a>
+          <div class="social-links animate-fade-delay-4">
+            <a href="https://github.com/theCoder-007-007" target="_blank" rel="noopener" class="social-icon">GitHub ↗</a>
+            <a href="https://linkedin.com/in/md-rafi-hossain-387840430" target="_blank" rel="noopener" class="social-icon">LinkedIn ↗</a>
+            <a href="mailto:husseinmdrafee007@gmail.com" class="social-icon">Email ↗</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stat Counter Strip -->
+    <section class="stats-strip">
+      <div class="stats-container">
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-number" data-target="11">0</span>
+          <span class="stat-label">Semesters Completed</span>
+        </div>
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-number" data-target="4">0</span>
+          <span class="stat-label">Student Projects</span>
+        </div>
+        <div class="stat-item reveal-on-scroll">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Undergraduate Research</span>
         </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
-      <div class="section-header">
+      <div class="section-header reveal-on-scroll">
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Academic Background & Core Focus</p>
+        <p class="section-subtitle">My Journey as a Student Learner</p>
       </div>
-      <div class="about-card">
+      <div class="about-card tilt-card reveal-on-scroll">
         <p class="about-text">
-          I am an 11th-semester Computer Science and Engineering student at Southeast University in Dhaka, Bangladesh. My work bridges software engineering, embedded systems, and predictive machine learning. I enjoy building clean, functional applications while solving complex computational problems.
+          I am currently in my 11th semester studying Computer Science and Engineering at Southeast University in Dhaka. I don't claim to be a professional yet—I am simply a beginner who enjoys coding, learning step-by-step, fixing bugs, and trying out new technologies as part of my degree and personal growth.
         </p>
         <div class="info-grid">
           <div class="info-item">
-            <span class="info-label">Degree Pathway</span>
+            <span class="info-label">Education</span>
             <span class="info-val">BSc in CSE (11th Semester)</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Institution</span>
+            <span class="info-label">University</span>
             <span class="info-val">Southeast University</span>
           </div>
           <div class="info-item">
@@ -83,7 +103,7 @@
             <span class="info-val">Dhaka, Bangladesh</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Spoken Languages</span>
+            <span class="info-label">Languages</span>
             <span class="info-val">Bengali, English, Hindi</span>
           </div>
         </div>
@@ -92,123 +112,139 @@
 
     <!-- Technical Skills Section -->
     <section id="skills" class="section">
-      <div class="section-header">
-        <h2 class="section-title">Technical Expertise</h2>
-        <p class="section-subtitle">Programming Languages, Frameworks & Tools</p>
+      <div class="section-header reveal-on-scroll">
+        <h2 class="section-title">Tools & Languages I Am Learning</h2>
+        <p class="section-subtitle">Technologies I have practiced during my study</p>
       </div>
       <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
-          <h3>Programming Languages</h3>
+        <div class="skill-card tilt-card reveal-on-scroll">
+          <div class="skill-icon animated-bounce">💻</div>
+          <h3>Basic Programming</h3>
           <div class="skill-tags">
-            <span class="tag">C / C++</span>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
             <span class="tag">Java</span>
             <span class="tag">Python</span>
             <span class="tag">SQL</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">🌐</div>
-          <h3>Web & Engineering Tools</h3>
+        <div class="skill-card tilt-card reveal-on-scroll">
+          <div class="skill-icon animated-bounce">🌐</div>
+          <h3>Basic Web Development</h3>
           <div class="skill-tags">
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
-            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">Basic JavaScript</span>
             <span class="tag">Git & GitHub</span>
             <span class="tag">VS Code</span>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">🤖</div>
-          <h3>Specialized Fields</h3>
+        <div class="skill-card tilt-card reveal-on-scroll">
+          <div class="skill-icon animated-bounce">🤖</div>
+          <h3>Academic Exploration</h3>
           <div class="skill-tags">
-            <span class="tag">Robotics & Firmware</span>
+            <span class="tag">Basic Robotics</span>
             <span class="tag">OpenGL Graphics</span>
-            <span class="tag">Data Analysis & NLP</span>
-            <span class="tag">Explainable AI (XAI)</span>
+            <span class="tag">Basic Machine Learning</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Projects Section -->
+    <!-- Student Projects Section -->
     <section id="projects" class="section">
-      <div class="section-header">
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Click any project to inspect technical details</p>
+      <div class="section-header reveal-on-scroll">
+        <h2 class="section-title">My Student Projects</h2>
+        <p class="section-subtitle">Classroom assignments & self-learning projects</p>
       </div>
       <div class="projects-grid">
         
-        <article class="project-card" data-project="ems">
-          <div class="project-header">
-            <h3>Employee Management System</h3>
-            <span class="badge">Full-Stack Web</span>
+        <article class="project-card tilt-card reveal-on-scroll" data-project="ems">
+          <div class="project-image-preview ems-bg">
+            <div class="overlay-button">Inspect Details →</div>
           </div>
-          <p class="project-tech">HTML5 • CSS3 • JavaScript • SQL</p>
-          <p class="project-desc">Full-stack web application designed for tracking employee records, managing organizational workflows, and handling database operations.</p>
-          <button class="modal-trigger">Inspect Details →</button>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Employee Management System</h3>
+              <span class="badge">Web Beginner</span>
+            </div>
+            <p class="project-tech">HTML • CSS • JavaScript • SQL</p>
+            <p class="project-desc">A simple webpage project I built to practice making forms, storing basic employee entries, and connecting to a small SQL database.</p>
+          </div>
         </article>
 
-        <article class="project-card" data-project="hexecho">
-          <div class="project-header">
-            <h3>HexEcho — Autonomous Robot</h3>
-            <span class="badge highlight">Robotics & Embedded</span>
+        <article class="project-card tilt-card reveal-on-scroll" data-project="hexecho">
+          <div class="project-image-preview robot-bg">
+            <div class="overlay-button">Inspect Details →</div>
           </div>
-          <p class="project-tech">Robotics • CAD Design • Embedded Firmware</p>
-          <p class="project-desc">Custom six-legged autonomous walking robot engineered with CAD components, wave gait stability algorithms, and ultrasonic sensor navigation.</p>
-          <button class="modal-trigger">Inspect Details →</button>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>HexEcho — Walking Robot</h3>
+              <span class="badge highlight">Hardware Project</span>
+            </div>
+            <p class="project-tech">Arduino/Embedded • CAD Design</p>
+            <p class="project-desc">A six-legged robot I designed with basic CAD parts and programmed to step forward while avoiding walls using an ultrasonic sensor.</p>
+          </div>
         </article>
 
-        <article class="project-card" data-project="graphics">
-          <div class="project-header">
-            <h3>3D Classroom Simulation</h3>
-            <span class="badge">Computer Graphics</span>
+        <article class="project-card tilt-card reveal-on-scroll" data-project="graphics">
+          <div class="project-image-preview graphics-bg">
+            <div class="overlay-button">Inspect Details →</div>
           </div>
-          <p class="project-tech">C++ • OpenGL • Computer Graphics</p>
-          <p class="project-desc">Interactive 3D simulation built with OpenGL, featuring dynamic lighting calculations, textured surfaces, animated ceiling fans, and camera controls.</p>
-          <button class="modal-trigger">Inspect Details →</button>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>3D Classroom Project</h3>
+              <span class="badge">Computer Graphics</span>
+            </div>
+            <p class="project-tech">C++ • OpenGL</p>
+            <p class="project-desc">A 3D room made for my computer graphics class using OpenGL with simple lighting, spinning fan motion, and basic camera controls.</p>
+          </div>
         </article>
 
-        <article class="project-card" data-project="cyberbullying">
-          <div class="project-header">
-            <h3>Cyberbullying Detection System</h3>
-            <span class="badge">Data Science & NLP</span>
+        <article class="project-card tilt-card reveal-on-scroll" data-project="cyberbullying">
+          <div class="project-image-preview nlp-bg">
+            <div class="overlay-button">Inspect Details →</div>
           </div>
-          <p class="project-tech">Python • Data Analysis • NLP</p>
-          <p class="project-desc">NLP research pipeline analyzing online harassment patterns across social platforms (Facebook, Instagram, X, TikTok) targeting localized user groups.</p>
-          <button class="modal-trigger">Inspect Details →</button>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Cyberbullying Detection Experiment</h3>
+              <span class="badge">Basic NLP</span>
+            </div>
+            <p class="project-tech">Python • Data Analysis</p>
+            <p class="project-desc">An experimental Python script trying out basic text classification on social media comments to learn how machine learning processes text.</p>
+          </div>
         </article>
 
       </div>
     </section>
 
-    <!-- Research Work Section -->
+    <!-- Research Focus Section -->
     <section id="research" class="section">
-      <div class="section-header">
-        <h2 class="section-title">Research Work</h2>
-        <p class="section-subtitle">Machine Learning & Explainable AI Focus</p>
+      <div class="section-header reveal-on-scroll">
+        <h2 class="section-title">Undergraduate Thesis / Academic Focus</h2>
+        <p class="section-subtitle">What I am currently studying in class</p>
       </div>
-      <div class="research-card">
+      <div class="research-card tilt-card reveal-on-scroll">
         <div class="research-header">
-          <h3>Explainable Ensemble Framework for Parkinson's Disease Classification</h3>
-          <span class="status-badge ongoing">Ongoing Research</span>
+          <h3>Parkinson's Disease Voice Classification Study</h3>
+          <span class="status-badge ongoing">Student Study</span>
         </div>
         <p class="research-desc">
-          Developing a voice-acoustic machine learning pipeline that combines feature selection algorithms (RFE, LASSO, Random Forest) with an ensemble classifier (SVM, Random Forest, XGBoost). Incorporates SHAP and LIME explainability frameworks to provide transparent interpretability for clinical medical diagnostics.
+          I am currently working with my course instructors on a beginner machine learning project studying voice dataset features. We are testing standard algorithms like Random Forest, SVM, and SHAP to understand how machine learning models analyze health data.
         </p>
       </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-      <div class="section-header">
+      <div class="section-header reveal-on-scroll">
         <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Let's Discuss Projects, Research, or Opportunities</p>
+        <p class="section-subtitle">Feel free to reach out to me anytime!</p>
       </div>
       <div class="contact-container">
-        <div class="contact-info">
+        <div class="contact-info reveal-on-scroll">
           <h3>Contact Details</h3>
-          <p class="contact-text">Feel free to send an email or reach out through social platforms. I am always open to discussing web engineering, robotics, or research ideas.</p>
+          <p class="contact-text">I am always happy to connect with fellow students, teachers, or anyone willing to share guidance and advice on learning programming!</p>
           <div class="contact-methods">
             <div class="method">
               <span class="method-icon">📧</span>
@@ -234,7 +270,7 @@
           </div>
         </div>
 
-        <form id="contact-form" novalidate>
+        <form id="contact-form" class="reveal-on-scroll" novalidate>
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" placeholder="John Doe">
@@ -247,29 +283,26 @@
           </div>
           <div class="form-group">
             <label for="message">Your Message</label>
-            <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+            <textarea id="message" rows="4" placeholder="Hello Rafi!"></textarea>
             <small class="error-msg" id="message-error"></small>
           </div>
-          <button type="submit" class="btn primary-btn submit-btn">Send Message 🚀</button>
+          <button type="submit" class="btn primary-btn submit-btn glow-effect">Send Message 🚀</button>
           <div id="form-status" class="form-status"></div>
         </form>
       </div>
     </section>
   </main>
 
-  <!-- Reusable Case Study Modal -->
+  <!-- Interactive Project Details Modal -->
   <div id="project-modal" class="modal-overlay" aria-hidden="true">
     <div class="modal-content">
       <button id="modal-close" class="modal-close-btn">&times;</button>
-      <div id="modal-body">
-        <!-- Content dynamically injected via JavaScript -->
-      </div>
+      <div id="modal-body"></div>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> Md Rafi Hossain. All rights reserved.</p>
+    <p>&copy; <span id="year"></span> Md Rafi Hossain • Student Portfolio</p>
   </footer>
 
   <button id="back-to-top" aria-label="Back to top">↑</button>
