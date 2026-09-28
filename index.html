@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Md Rafi Hossain - Undergraduate CSE Student, Researcher & Developer">
-  <title>Md Rafi Hossain | Portfolio</title>
+  <meta name="description" content="Portfolio of Md Rafi Hossain - Undergraduate CSE Student, Researcher & Full-Stack Developer at Southeast University, Dhaka.">
+  <title>Md Rafi Hossain | CSE Student & Developer</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Reading Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Glassmorphism Header -->
   <header id="header">
     <div class="nav-container">
       <a href="#" class="logo">Rafi<span class="dot">.</span></a>
@@ -23,7 +26,7 @@
         <a href="#research" class="nav-link">Research</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <button id="theme-btn" aria-label="Toggle theme">🌙 Dark Mode</button>
+      <button id="theme-btn" aria-label="Toggle light or dark theme">🌙 Dark Mode</button>
     </div>
   </header>
 
@@ -36,16 +39,16 @@
           <div class="image-glow"></div>
         </div>
         <div class="hero-content">
-          <span class="greeting-badge">Welcome to my portfolio</span>
+          <span class="greeting-badge">📍 Dhaka, Bangladesh</span>
           <h1>Md Rafi Hossain</h1>
           <h2>Undergraduate CSE Student @ Southeast University</h2>
           <p class="hero-bio">
-            Passionate about Web Development, Machine Learning, Robotics, and Computer Graphics. Currently investigating explainable AI frameworks for medical diagnostic applications.
+            Passionate about Web Development, Machine Learning, Robotics, and Computer Graphics. Currently conducting research on explainable AI frameworks for medical diagnostics.
           </p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="#projects" class="btn primary-btn">View Featured Work</a>
             <a href="CV_Md_Rafi_Hossain.pdf" download class="btn outline-btn">📄 Download CV</a>
-            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            <a href="#contact" class="btn secondary-btn">Get In Touch</a>
           </div>
           <div class="social-links">
             <a href="https://github.com/theCoder-007-007" target="_blank" rel="noopener">GitHub ↗</a>
@@ -60,16 +63,15 @@
     <section id="about" class="section">
       <div class="section-header">
         <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Background & Academic Track</p>
+        <p class="section-subtitle">Academic Background & Core Focus</p>
       </div>
       <div class="about-card">
         <p class="about-text">
-          I am a 4th-year Computer Science and Engineering student at Southeast University in Dhaka, Bangladesh.
-          I specialize in full-stack web applications, hardware-software integration for robotics, and predictive machine learning models.
+          I am an 11th-semester Computer Science and Engineering student at Southeast University in Dhaka, Bangladesh. My work bridges software engineering, embedded systems, and predictive machine learning. I enjoy building clean, functional applications while solving complex computational problems.
         </p>
         <div class="info-grid">
           <div class="info-item">
-            <span class="info-label">Degree</span>
+            <span class="info-label">Degree Pathway</span>
             <span class="info-val">BSc in CSE (11th Semester)</span>
           </div>
           <div class="info-item">
@@ -81,7 +83,7 @@
             <span class="info-val">Dhaka, Bangladesh</span>
           </div>
           <div class="info-item">
-            <span class="info-label">Languages</span>
+            <span class="info-label">Spoken Languages</span>
             <span class="info-val">Bengali, English, Hindi</span>
           </div>
         </div>
@@ -92,7 +94,7 @@
     <section id="skills" class="section">
       <div class="section-header">
         <h2 class="section-title">Technical Expertise</h2>
-        <p class="section-subtitle">Tools, Languages & Technologies</p>
+        <p class="section-subtitle">Programming Languages, Frameworks & Tools</p>
       </div>
       <div class="skills-grid">
         <div class="skill-card">
@@ -107,77 +109,84 @@
         </div>
         <div class="skill-card">
           <div class="skill-icon">🌐</div>
-          <h3>Web & Frontend</h3>
+          <h3>Web & Engineering Tools</h3>
           <div class="skill-tags">
             <span class="tag">HTML5</span>
             <span class="tag">CSS3</span>
             <span class="tag">JavaScript (ES6+)</span>
-            <span class="tag">Responsive Design</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">VS Code</span>
           </div>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">🛠️</div>
-          <h3>Development Tools</h3>
+          <div class="skill-icon">🤖</div>
+          <h3>Specialized Fields</h3>
           <div class="skill-tags">
-            <span class="tag">Git & GitHub</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">OpenGL</span>
-            <span class="tag">MS Office Tools</span>
+            <span class="tag">Robotics & Firmware</span>
+            <span class="tag">OpenGL Graphics</span>
+            <span class="tag">Data Analysis & NLP</span>
+            <span class="tag">Explainable AI (XAI)</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Projects Section -->
     <section id="projects" class="section">
       <div class="section-header">
         <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">Selected Software & Hardware Builds</p>
+        <p class="section-subtitle">Click any project to inspect technical details</p>
       </div>
       <div class="projects-grid">
-        <article class="project-card">
+        
+        <article class="project-card" data-project="ems">
           <div class="project-header">
             <h3>Employee Management System</h3>
-            <span class="badge">Web App</span>
+            <span class="badge">Full-Stack Web</span>
           </div>
           <p class="project-tech">HTML5 • CSS3 • JavaScript • SQL</p>
-          <p class="project-desc">A full-stack management portal built for tracking employee records, handling attendance metrics, and administrative database workflows.</p>
+          <p class="project-desc">Full-stack web application designed for tracking employee records, managing organizational workflows, and handling database operations.</p>
+          <button class="modal-trigger">Inspect Details →</button>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="hexecho">
           <div class="project-header">
             <h3>HexEcho — Autonomous Robot</h3>
-            <span class="badge highlight">Robotics</span>
+            <span class="badge highlight">Robotics & Embedded</span>
           </div>
           <p class="project-tech">Robotics • CAD Design • Embedded Firmware</p>
-          <p class="project-desc">Six-legged autonomous walking robot equipped with custom CAD-designed chassis, wave gait motion dynamics, and ultrasonic obstacle navigation.</p>
+          <p class="project-desc">Custom six-legged autonomous walking robot engineered with CAD components, wave gait stability algorithms, and ultrasonic sensor navigation.</p>
+          <button class="modal-trigger">Inspect Details →</button>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="graphics">
           <div class="project-header">
             <h3>3D Classroom Simulation</h3>
             <span class="badge">Computer Graphics</span>
           </div>
-          <p class="project-tech">C++ • OpenGL • Graphics Pipeline</p>
-          <p class="project-desc">Interactive 3D virtual environment featuring real-time dynamic lighting, custom dynamic object texturing, animated ceiling fan, and 3D camera controls.</p>
+          <p class="project-tech">C++ • OpenGL • Computer Graphics</p>
+          <p class="project-desc">Interactive 3D simulation built with OpenGL, featuring dynamic lighting calculations, textured surfaces, animated ceiling fans, and camera controls.</p>
+          <button class="modal-trigger">Inspect Details →</button>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="cyberbullying">
           <div class="project-header">
             <h3>Cyberbullying Detection System</h3>
-            <span class="badge">Data Science</span>
+            <span class="badge">Data Science & NLP</span>
           </div>
-          <p class="project-tech">Python • NLP • Data Analytics</p>
-          <p class="project-desc">NLP-based analysis pipeline detecting localized cyberbullying patterns across Facebook, X, Instagram, and TikTok aimed at targeted demographics.</p>
+          <p class="project-tech">Python • Data Analysis • NLP</p>
+          <p class="project-desc">NLP research pipeline analyzing online harassment patterns across social platforms (Facebook, Instagram, X, TikTok) targeting localized user groups.</p>
+          <button class="modal-trigger">Inspect Details →</button>
         </article>
+
       </div>
     </section>
 
-    <!-- Research Section -->
+    <!-- Research Work Section -->
     <section id="research" class="section">
       <div class="section-header">
         <h2 class="section-title">Research Work</h2>
-        <p class="section-subtitle">Academic & Machine Learning Endeavors</p>
+        <p class="section-subtitle">Machine Learning & Explainable AI Focus</p>
       </div>
       <div class="research-card">
         <div class="research-header">
@@ -185,7 +194,7 @@
           <span class="status-badge ongoing">Ongoing Research</span>
         </div>
         <p class="research-desc">
-          Engineering a voice-acoustic machine learning model integrating iterative feature selection methods (RFE, LASSO, Random Forest) with ensemble models (SVM, XGBoost) combined with SHAP/LIME explainable AI frameworks for clinical transparency.
+          Developing a voice-acoustic machine learning pipeline that combines feature selection algorithms (RFE, LASSO, Random Forest) with an ensemble classifier (SVM, Random Forest, XGBoost). Incorporates SHAP and LIME explainability frameworks to provide transparent interpretability for clinical medical diagnostics.
         </p>
       </div>
     </section>
@@ -194,12 +203,12 @@
     <section id="contact" class="section">
       <div class="section-header">
         <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Let's Discuss Opportunities & Collaboration</p>
+        <p class="section-subtitle">Let's Discuss Projects, Research, or Opportunities</p>
       </div>
       <div class="contact-container">
         <div class="contact-info">
           <h3>Contact Details</h3>
-          <p class="contact-text">Feel free to reach out for research collaborations, software projects, or academic queries.</p>
+          <p class="contact-text">Feel free to send an email or reach out through social platforms. I am always open to discussing web engineering, robotics, or research ideas.</p>
           <div class="contact-methods">
             <div class="method">
               <span class="method-icon">📧</span>
@@ -247,6 +256,16 @@
       </div>
     </section>
   </main>
+
+  <!-- Reusable Case Study Modal -->
+  <div id="project-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close-btn">&times;</button>
+      <div id="modal-body">
+        <!-- Content dynamically injected via JavaScript -->
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
