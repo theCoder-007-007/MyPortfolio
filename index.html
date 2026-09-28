@@ -1,165 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md Rafi Hossain - Portfolio</title>
+  <meta name="description" content="Portfolio of Md Rafi Hossain - Undergraduate CSE Student, Researcher & Developer">
+  <title>Md Rafi Hossain | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation Bar -->
-  <header>
+  <header id="header">
     <div class="nav-container">
-      <div class="logo">Rafi</div>
+      <a href="#" class="logo">Rafi<span class="dot">.</span></a>
       <nav id="nav-menu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#research">Research</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#research" class="nav-link">Research</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
-      <button id="theme-btn">🌙 Dark Mode</button>
+      <button id="theme-btn" aria-label="Toggle theme">🌙 Dark Mode</button>
     </div>
   </header>
-  <!-- Hero / Intro Section with Image & CV Download -->
-  <section id="hero">
-    <div class="hero-container">
-      <div class="hero-image">
-      <img src="profile.jpg" alt="Md Rafi Hossain">
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-image-wrapper">
+          <img src="profile.jpg" alt="Md Rafi Hossain" class="hero-image">
+          <div class="image-glow"></div>
+        </div>
+        <div class="hero-content">
+          <span class="greeting-badge">Welcome to my portfolio</span>
+          <h1>Md Rafi Hossain</h1>
+          <h2>Undergraduate CSE Student @ Southeast University</h2>
+          <p class="hero-bio">
+            Passionate about Web Development, Machine Learning, Robotics, and Computer Graphics. Currently investigating explainable AI frameworks for medical diagnostic applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="CV_Md_Rafi_Hossain.pdf" download class="btn outline-btn">📄 Download CV</a>
+            <a href="#contact" class="btn secondary-btn">Contact Me</a>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/theCoder-007-007" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/in/md-rafi-hossain-387840430" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="mailto:husseinmdrafee007@gmail.com">Email ↗</a>
+          </div>
+        </div>
       </div>
-      <div class="hero-content">
-        <p class="greeting">Hello, I'm</p>
-        <h1>Md Rafi Hossain</h1>
-        <h3>Undergraduate CSE Student @ Southeast University</h3>
-        <p class="hero-bio">
-          Passionate about Web Development, Machine Learning, Robotics, and Computer Graphics. Currently exploring explainable AI for medical diagnostics.
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Background & Academic Track</p>
+      </div>
+      <div class="about-card">
+        <p class="about-text">
+          I am a 4th-year Computer Science and Engineering student at Southeast University in Dhaka, Bangladesh.
+          I specialize in full-stack web applications, hardware-software integration for robotics, and predictive machine learning models.
         </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn primary-btn">Contact Me</a>
-          <a href="#projects" class="btn secondary-btn">View Projects</a>
-          <!-- Update href to match your exact PDF file name: -->
-<a href="CV_Md_Rafi_Hossain.pdf" download class="btn outline-btn">📄 Download CV</a>
-        <div class="social-links">
-          <a href="https://github.com/theCoder-007-007" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/md-rafi-hossain-387840430" target="_blank">LinkedIn</a>
-          <a href="mailto:husseinmdrafee007@gmail.com">Email</a>
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Degree</span>
+            <span class="info-val">BSc in CSE (11th Semester)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Institution</span>
+            <span class="info-val">Southeast University</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-val">Dhaka, Bangladesh</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Languages</span>
+            <span class="info-val">Bengali, English, Hindi</span>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
-    <div class="about-container">
-      <p>
-        I am a 4th-year Computer Science and Engineering student at Southeast University in Dhaka, Bangladesh.
-        I enjoy solving problems, building embedded systems, and creating web applications.
-      </p>
-      <div class="info-grid">
-        <p><strong>Degree:</strong> BSc in CSE (11th Semester)</p>
-        <p><strong>Institution:</strong> Southeast University</p>
-        <p><strong>Location:</strong> Dhaka, Bangladesh</p>
-        <p><strong>Languages:</strong> Bengali, English, Hindi</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2 class="section-title">Technical Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Languages</h3>
-        <ul>
-          <li>C / C++</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>SQL</li>
-        </ul>
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">Tools, Languages & Technologies</p>
       </div>
-      <div class="skill-card">
-        <h3>Web & Tools</h3>
-        <ul>
-          <li>HTML5 & CSS3</li>
-          <li>JavaScript</li>
-          <li>Git & GitHub</li>
-          <li>MS Office Tools</li>
-        </ul>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="tag">C / C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Web & Frontend</h3>
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🛠️</div>
+          <h3>Development Tools</h3>
+          <div class="skill-tags">
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">OpenGL</span>
+            <span class="tag">MS Office Tools</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Employee Management System</h3>
-        <p class="project-tech">HTML, CSS, JavaScript, SQL</p>
-        <p>A full-stack web application designed for managing employee records, tracking attendance, and handling basic organizational workflows.</p>
-      </div>
-      <div class="project-card">
-        <h3>HexEcho — Autonomous Walking Robot</h3>
-        <p class="project-tech">Robotics, CAD, Embedded Firmware</p>
-        <p>Built a custom six-legged autonomous robot with custom CAD components, wave gait stability algorithms, and ultrasonic obstacle avoidance.</p>
-      </div>
-      <div class="project-card">
-        <h3>3D Classroom Simulation</h3>
-        <p class="project-tech">C++, OpenGL / Computer Graphics</p>
-        <p>Interactive 3D simulation with dynamic lighting, textured walls, animated ceiling fan, and first-person camera navigation.</p>
-      </div>
-      <div class="project-card">
-        <h3>Cyberbullying Detection System</h3>
-        <p class="project-tech">Python, Data Analysis, NLP</p>
-        <p>Research project identifying online harassment across Facebook, Instagram, X, and TikTok targeted at Bangladeshi social media users.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Research Section -->
-  <section id="research" class="section">
-    <h2 class="section-title">Research Work</h2>
-    <div class="research-card">
-      <h3>Explainable Ensemble Framework for Parkinson's Disease Classification</h3>
-      <p class="status">Status: Ongoing Research</p>
-      <p>
-        Developing a voice-based machine learning model combining feature selection algorithms (RFE, LASSO, Random Forest) with an ensemble classifier (SVM, Random Forest, XGBoost) and SHAP/LIME explainability tools.
-      </p>
-    </div>
-  </section>
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2 class="section-title">Get In Touch</h2>
-    <div class="contact-container">
-      <div class="contact-info">
-        <p><strong>Email:</strong> husseinmdrafee007@gmail.com</p>
-        <p><strong>Phone:</strong> +880 1303042799</p>
-        <p><strong>Location:</strong> Dhaka, Bangladesh</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Selected Software & Hardware Builds</p>
       </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Employee Management System</h3>
+            <span class="badge">Web App</span>
+          </div>
+          <p class="project-tech">HTML5 • CSS3 • JavaScript • SQL</p>
+          <p class="project-desc">A full-stack management portal built for tracking employee records, handling attendance metrics, and administrative database workflows.</p>
+        </article>
 
-      <form id="contact-form">
-        <div class="form-group">
-          <input type="text" id="name" placeholder="Your Name">
-          <small class="error-msg" id="name-error"></small>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>HexEcho — Autonomous Robot</h3>
+            <span class="badge highlight">Robotics</span>
+          </div>
+          <p class="project-tech">Robotics • CAD Design • Embedded Firmware</p>
+          <p class="project-desc">Six-legged autonomous walking robot equipped with custom CAD-designed chassis, wave gait motion dynamics, and ultrasonic obstacle navigation.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>3D Classroom Simulation</h3>
+            <span class="badge">Computer Graphics</span>
+          </div>
+          <p class="project-tech">C++ • OpenGL • Graphics Pipeline</p>
+          <p class="project-desc">Interactive 3D virtual environment featuring real-time dynamic lighting, custom dynamic object texturing, animated ceiling fan, and 3D camera controls.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-header">
+            <h3>Cyberbullying Detection System</h3>
+            <span class="badge">Data Science</span>
+          </div>
+          <p class="project-tech">Python • NLP • Data Analytics</p>
+          <p class="project-desc">NLP-based analysis pipeline detecting localized cyberbullying patterns across Facebook, X, Instagram, and TikTok aimed at targeted demographics.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Research Work</h2>
+        <p class="section-subtitle">Academic & Machine Learning Endeavors</p>
+      </div>
+      <div class="research-card">
+        <div class="research-header">
+          <h3>Explainable Ensemble Framework for Parkinson's Disease Classification</h3>
+          <span class="status-badge ongoing">Ongoing Research</span>
         </div>
-        <div class="form-group">
-          <input type="email" id="email" placeholder="Your Email">
-          <small class="error-msg" id="email-error"></small>
+        <p class="research-desc">
+          Engineering a voice-acoustic machine learning model integrating iterative feature selection methods (RFE, LASSO, Random Forest) with ensemble models (SVM, XGBoost) combined with SHAP/LIME explainable AI frameworks for clinical transparency.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's Discuss Opportunities & Collaboration</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p class="contact-text">Feel free to reach out for research collaborations, software projects, or academic queries.</p>
+          <div class="contact-methods">
+            <div class="method">
+              <span class="method-icon">📧</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:husseinmdrafee007@gmail.com">husseinmdrafee007@gmail.com</a>
+              </div>
+            </div>
+            <div class="method">
+              <span class="method-icon">📱</span>
+              <div>
+                <strong>Phone</strong>
+                <p>+880 1303042799</p>
+              </div>
+            </div>
+            <div class="method">
+              <span class="method-icon">📍</span>
+              <div>
+                <strong>Location</strong>
+                <p>Dhaka, Bangladesh</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea id="message" rows="4" placeholder="Your Message"></textarea>
-          <small class="error-msg" id="message-error"></small>
-        </div>
-        <button type="submit" class="btn primary-btn">Send Message</button>
-        <p id="form-status"></p>
-      </form>
-    </div>
-  </section>
+
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe">
+            <small class="error-msg" id="name-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="john@example.com">
+            <small class="error-msg" id="email-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+            <small class="error-msg" id="message-error"></small>
+          </div>
+          <button type="submit" class="btn primary-btn submit-btn">Send Message 🚀</button>
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
     <p>&copy; <span id="year"></span> Md Rafi Hossain. All rights reserved.</p>
   </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
